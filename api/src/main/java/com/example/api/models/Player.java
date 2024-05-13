@@ -4,18 +4,35 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "players")
-public class Players {
+public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String playerName;
+    private String playerUrl;
 
     @Column(name = "team_id")
     private long teamId;
 
+    public String getPlayerUrl() {
+        return playerUrl;
+    }
+
+    public void setPlayerUrl(String playerUrl) {
+        this.playerUrl = playerUrl;
+    }
+
+    public long getTeamId() {
+        return teamId;
+    }
+
+    public void setTeamId(long teamId) {
+        this.teamId = teamId;
+    }
+
     @ManyToOne
     @JoinColumn(name = "team_id", insertable = false, updatable = false)
-    private Teams team;
+    private Team team;
 
     public long getId() {
         return id;
@@ -33,11 +50,11 @@ public class Players {
         this.playerName = playerName;
     }
 
-    public Teams getTeam() {
+    public Team getTeam() {
         return team;
     }
 
-    public void setTeam(Teams team) {
+    public void setTeam(Team team) {
         this.team = team;
     }
 }

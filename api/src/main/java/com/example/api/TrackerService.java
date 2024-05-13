@@ -1,5 +1,9 @@
 package com.example.api;
 
+import com.example.api.models.Match;
+import com.example.api.models.Player;
+import com.example.api.models.Team;
+import com.example.api.models.Tournament;
 import com.example.api.repositories.MatchesRepository;
 import com.example.api.repositories.PlayersRepository;
 import com.example.api.repositories.TeamsRepository;
@@ -24,6 +28,29 @@ public class TrackerService {
 
     // CREATE
 
+    public Tournament addTournament(Tournament tournament) {
+        Tournament newTournament = tournamentsRepository.save(tournament);
+        System.out.println(newTournament);
+        return newTournament;
+    }
+
+    public Team addTeam(Team team) {
+        Team newTeam = teamsRepository.save(team);
+        System.out.println(newTeam);
+        return newTeam;
+    }
+
+    public Player addPlayer(Player player) {
+        Player newPlayer = playersRepository.save(player);
+        System.out.println(newPlayer);
+        return newPlayer;
+    }
+
+    public Match addMatch(Match match) {
+        Match newMatch = matchesRepository.save(match);
+        System.out.println(newMatch);
+        return newMatch;
+    }
 
 
 

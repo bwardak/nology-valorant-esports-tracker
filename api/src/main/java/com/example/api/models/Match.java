@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "matches")
-public class Matches {
+public class Match {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -16,12 +16,16 @@ public class Matches {
     @Column(name = "tournament_id")
     private long tournamentId;
 
-    public Tournaments getTournaments() {
-        return tournaments;
+    @ManyToOne
+    @JoinColumn(name = "tournament_id", insertable = false, updatable = false)
+    private Tournament tournament;
+
+    public Tournament getTournaments() {
+        return tournament;
     }
 
-    public void setTournaments(Tournaments tournaments) {
-        this.tournaments = tournaments;
+    public void setTournaments(Tournament tournament) {
+        this.tournament = tournament;
     }
 
     public long getId() {
@@ -56,7 +60,5 @@ public class Matches {
         this.date = date;
     }
 
-    @ManyToOne
-    @JoinColumn(name = "tournament_id", nullable = false)
-    private Tournaments tournaments;
+
 }

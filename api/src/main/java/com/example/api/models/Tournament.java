@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "tournaments")
-public class Tournaments {
+public class Tournament {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
