@@ -8,19 +8,12 @@ public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String playerName;
-    private String playerUrl;
+    private String name;
+    private String url;
 
     @Column(name = "team_id")
     private long teamId;
 
-    public String getPlayerUrl() {
-        return playerUrl;
-    }
-
-    public void setPlayerUrl(String playerUrl) {
-        this.playerUrl = playerUrl;
-    }
 
     public long getTeamId() {
         return teamId;
@@ -42,12 +35,20 @@ public class Player {
         this.id = id;
     }
 
-    public String getPlayerName() {
-        return playerName;
+    public String getUrl() {
+        return url;
     }
 
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Team getTeam() {

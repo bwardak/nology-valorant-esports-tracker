@@ -29,7 +29,7 @@ public class TrackerController {
 
     @PostMapping("/player")
     public ResponseEntity<Player> createPlayer(@RequestBody Player player) {
-        Player newPlayer = trackerService.addPlayer(player)
+        Player newPlayer = trackerService.addPlayer(player);
         return ResponseEntity.status(HttpStatus.CREATED).body(newPlayer);
     }
 

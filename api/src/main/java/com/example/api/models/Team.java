@@ -9,6 +9,7 @@ public class Team {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
+    private String region;
 
     public long getId() {
         return id;
@@ -34,5 +35,5 @@ public class Team {
         this.region = region;
     }
 
-    private String region;
+
 }
