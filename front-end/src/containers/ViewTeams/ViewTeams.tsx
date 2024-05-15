@@ -6,17 +6,10 @@ export const ViewTeams = () => {
 
   const getTeams = async () => {
     let url = "http://localhost:8080/teams";
-    console.log(url);
-    
+
     const response = await fetch(url);
-    console.log(response);
-    
     const teamData = await response.json();
-    console.log(teamData);
-    
     setTeams(teamData);
-    console.log(teams);
-    
   }
 
   useEffect(() => {

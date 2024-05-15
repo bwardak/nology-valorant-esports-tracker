@@ -3,6 +3,7 @@ import './App.scss'
 import Nav from './components/Nav/Nav'
 import Home from './containers/Home/Home'
 import { ViewTeams } from './containers/ViewTeams/ViewTeams'
+import ViewTournaments from './containers/ViewTournaments/ViewTournaments'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/teams' element={<ViewTeams />} />
+        <Route path='/tournaments' element={<ViewTournaments />} />
       </Routes>
     </Router>
   )
