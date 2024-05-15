@@ -51,7 +51,22 @@ public class TrackerController {
     @GetMapping("/teams")
     public ResponseEntity<List<Team>> getTeams() {
         return ResponseEntity.status(HttpStatus.OK).body(trackerService.getAllTeams());
-}
+    }
+
+    @GetMapping("/players")
+    public ResponseEntity<List<Player>> getPlayers() {
+        return ResponseEntity.status(HttpStatus.OK).body(trackerService.getAllPlayers());
+    }
+
+    @GetMapping("/tournaments")
+    public ResponseEntity<List<Tournament>> getTournaments() {
+        return ResponseEntity.status(HttpStatus.OK).body(trackerService.getAllTournaments());
+    }
+
+    @GetMapping("/matches")
+    public ResponseEntity<List<Match>> getMatches() {
+        return ResponseEntity.status(HttpStatus.OK).body(trackerService.getAllMatches());
+    }
 
 
     // UPDATE

@@ -10,8 +10,8 @@ const Team = ({team}: TeamProp) => {
   } = team;
   
   return (
-    <div>
-      <h3>Team: {name}</h3>
+    <div className='team-box'>
+      <h3>{name}</h3>
       <p>Region: {region}</p>
     </div>
   )

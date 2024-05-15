@@ -63,6 +63,18 @@ public class TrackerService {
         return new ArrayList<>(teamsRepository.getAllByOrderById());
     }
 
+    public List<Tournament> getAllTournaments() {
+        return new ArrayList<>(tournamentsRepository.getAllByOrderById());
+    }
+
+    public List<Player> getAllPlayers() {
+        return new ArrayList<>(playersRepository.getAllByOrderById());
+    }
+
+    public List<Match> getAllMatches() {
+        return new ArrayList<>(matchesRepository.getAllByOrderById());
+    }
+
 
 
     // UPDATE

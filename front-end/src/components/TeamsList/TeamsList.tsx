@@ -7,7 +7,7 @@ type TeamsListProps = {
 const TeamsList = ({teams}: TeamsListProps) => {
   return (
     <>
-      <div>
+      <div className='teams'>
         {teams.map(team => (
           <Team team={team} key={team.id}/>
         ))}
