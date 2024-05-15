@@ -1,5 +1,5 @@
 type TournamentResponse = {
-  id: number;
+  id?: number;
   name: string;
   location: string;
   startDate: string;

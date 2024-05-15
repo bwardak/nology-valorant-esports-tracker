@@ -26,7 +26,6 @@ const Tournament = ({ tournament }: TournamentProp) => {
   const parsedStartDate = parseISODate(startDate);
   const parsedEndDate = parseISODate(endDate);
 
-  console.log(parsedStartDate, parsedEndDate);
 
   return (
     <div>
