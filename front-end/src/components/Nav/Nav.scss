@@ -1,5 +1,14 @@
-.navigation {
+.nav {
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
+  background-color: #240750;
+
+  &__home,
+  &__tournaments,
+  &__teams {
+    text-decoration: none;
+    color: #566b8d;
+  }
+
 }
