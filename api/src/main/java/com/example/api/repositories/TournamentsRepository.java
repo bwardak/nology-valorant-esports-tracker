@@ -1,6 +1,5 @@
 package com.example.api.repositories;
 
-import com.example.api.models.Team;
 import com.example.api.models.Tournament;
 import jakarta.persistence.Table;
 import org.springframework.data.jpa.repository.JpaRepository;

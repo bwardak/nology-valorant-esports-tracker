@@ -1,5 +1,23 @@
 USE valorant_esports_tracker_db;
 
+-- 2024 Tournaments
+
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-02-16', '2024-03-04', 'Champions Tour 2024: Americas Kickoff', 'Los Angeles');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-02-17', '2024-02-25', 'Champions Tour 2024: Pacific Kickoff', 'Seoul');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-02-20', '2024-03-01', 'Champions Tour 2024: EMEA Kickoff', 'Berlin');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-02-22', '2024-03-03', 'Champions Tour 2024: China Kickoff', 'Shanghai');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-03-14', '2024-03-24', 'Champions Tour 2024: Masters Madrid', 'Madrid');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-04-03', '2024-05-12', 'Champions Tour 2024: EMEA Stage 1', 'Berlin');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-04-05', '2024-05-13', 'Champions Tour 2024: China Stage 1', 'Shangai');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-04-06', '2024-05-12', 'Champions Tour 2024: Pacific Stage 1', 'Seoul');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-04-06', '2024-05-13', 'Champions Tour 2024: Americas Stage 1', 'Los Angeles');
+INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-05-23', '2024-06-09', 'Champions Tour 2024: Masters Shanghai', 'Shanghai');
+
+
+
+
+
+
 -- North American teams
 INSERT INTO teams (name, region) VALUES ('100 Thieves', 'North America');
 INSERT INTO teams (name, region) VALUES ('Cloud9', 'North America');
