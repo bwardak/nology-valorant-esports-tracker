@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
@@ -66,6 +67,11 @@ public class TrackerController {
     @GetMapping("/matches")
     public ResponseEntity<List<Match>> getMatches() {
         return ResponseEntity.status(HttpStatus.OK).body(trackerService.getAllMatches());
+    }
+
+    @GetMapping("/tournament/latest")
+    public Optional<Tournament> getLatestTournament() {
+        return trackerService.getLatestTournament();
     }
 
 

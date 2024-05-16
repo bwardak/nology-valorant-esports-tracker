@@ -11,8 +11,10 @@ import com.example.api.repositories.TournamentsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -65,6 +67,17 @@ public class TrackerService {
 
     public List<Tournament> getAllTournaments() {
         return new ArrayList<>(tournamentsRepository.getAllByOrderById());
+    }
+
+    public Optional<Tournament> getLatestTournament() {
+        LocalDate currentDate = LocalDate.now();
+        Optional<Tournament> currentTournament = tournamentsRepository.findCurrentTournament(currentDate);
+
+        if (currentTournament.isPresent()) {
+            return currentTournament;
+        } else  {
+            return tournamentsRepository.findNextTournament(currentDate);
+        }
     }
 
     public List<Player> getAllPlayers() {

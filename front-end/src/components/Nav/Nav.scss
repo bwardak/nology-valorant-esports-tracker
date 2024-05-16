@@ -1,14 +1,18 @@
+@use '../../styles/Variables.scss' as *;
+
 .nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-size: 1.5rem;
-  background-color: #240750;
+  background-color: $color-grey-dark;
+  height: 65px;
 
   &__home,
   &__tournaments,
   &__teams {
     text-decoration: none;
-    color: #566b8d;
+    color: $color-pink;
   }
 
 }
