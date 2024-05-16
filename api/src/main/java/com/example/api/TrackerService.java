@@ -64,7 +64,7 @@ public class TrackerService {
 
     // READ
     public List<Team> getAllTeams() {
-        return new ArrayList<>(teamsRepository.getAllByOrderById());
+        return teamsRepository.findAll();
     }
 
     public List<Tournament> getAllTournaments() {

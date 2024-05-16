@@ -3,7 +3,6 @@ import './ViewTournaments.scss';
 import TournamentsList from '../../components/TournamentsList/TournamentsList';
 import Button from '../../components/Button/Button';
 import CreateTournaments from '../CreateTournaments/CreateTournaments';
-import EditTournament from '../EditTournament/EditTournament';
 
 
 const ViewTournaments =  () => {

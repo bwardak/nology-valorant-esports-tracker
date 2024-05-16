@@ -1,1 +1,13 @@
 @use '../../styles/Variables.scss' as *;
+
+.team-profile {
+  &__name,
+  &__region {
+    color: $color-pink;
+  }
+
+  &__logo {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -19,56 +19,57 @@ INSERT INTO tournaments (start_date, end_date, name, location) VALUES ('2024-05-
 
 
 -- North American teams
-INSERT INTO teams (name, region) VALUES ('100 Thieves', 'North America');
-INSERT INTO teams (name, region) VALUES ('Cloud9', 'North America');
-INSERT INTO teams (name, region) VALUES ('Evil Geniuses', 'North America');
-INSERT INTO teams (name, region) VALUES ('FURIA', 'Brazil');
-INSERT INTO teams (name, region) VALUES ('KRÜ Esports', 'Latin America');
-INSERT INTO teams (name, region) VALUES ('Leviatán', 'Latin America South');
-INSERT INTO teams (name, region) VALUES ('LOUD', 'Brazil');
-INSERT INTO teams (name, region) VALUES ('MIBR', 'Brazil');
-INSERT INTO teams (name, region) VALUES ('NRG', 'North America');
-INSERT INTO teams (name, region) VALUES ('Sentinels', 'North America');
-INSERT INTO teams (name, region) VALUES ('G2 Esports', 'North America');
+INSERT INTO teams (name, region, url) VALUES ('100 Thieves', 'North America', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/100_Thieves_logo.svg/1200px-100_Thieves_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('Cloud9', 'North America', 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Cloud9_logo_c._2023.svg');
+INSERT INTO teams (name, region, url) VALUES ('Evil Geniuses', 'North America', 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Evil_geniuses_logo.svg/800px-Evil_geniuses_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('FURIA', 'Brazil', 'https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/FURIA_Esports_logo.svg/1200px-FURIA_Esports_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('KRÜ Esports', 'Latin America', 'https://resource.logitechg.com/content/dam/gaming/en/esports/may-2023-update/team-logos/38-kr%C3%BC-esports.png?v=1');
+INSERT INTO teams (name, region, url) VALUES ('Leviatán', 'Latin America South', 'https://egamersworld.com/_next/image?url=https%3A%2F%2Fegamersworld.com%2Fuploads%2Fvalorant%2Fteams%2Fleviatan-esports-logo.png&w=384&q=75');
+INSERT INTO teams (name, region, url) VALUES ('LOUD', 'Brazil', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/LOUD_logo.svg/1200px-LOUD_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('MIBR', 'Brazil', 'https://upload.wikimedia.org/wikipedia/commons/5/53/Made_In_Brazil_logo.png');
+INSERT INTO teams (name, region, url) VALUES ('NRG', 'North America', 'https://assets-global.website-files.com/608c5ef703153e59ec742548/60972b548b70f2cc4f3e8b66_nrg-open-graph.jpg');
+INSERT INTO teams (name, region, url) VALUES ('Sentinels', 'North America', 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sentinels_logo.svg/1200px-Sentinels_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('G2 Esports', 'North America', 'https://upload.wikimedia.org/wikipedia/en/1/12/Esports_organization_G2_Esports_logo.svg');
 
 -- EMEA teams
-INSERT INTO teams (name, region) VALUES ('Fnatic', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('BBL', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('FUT', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('Karmine Corp', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('KOI', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('Natus Vincere', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('Team Heretics', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('Team Liquid', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('Vitality', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('Gentle Mates', 'EMEA');
-INSERT INTO teams (name, region) VALUES ('Giants', 'EMEA');
+INSERT INTO teams (name, region, url) VALUES ('Fnatic', 'EMEA', 'https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Esports_organization_Fnatic_logo.svg/1200px-Esports_organization_Fnatic_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('BBL', 'EMEA', 'https://yt3.googleusercontent.com/fgKjh9KHAytZg-bsdQYaexyX5HrT4mH7UrwEQCj8TMdIhu42jWfA6bdj-Q6kcIzlfpraXulBYg=s900-c-k-c0x00ffffff-no-rj');
+INSERT INTO teams (name, region, url) VALUES ('FUT', 'EMEA', 'https://prosettings.net/wp-content/uploads/fut-esports.png');
+INSERT INTO teams (name, region, url) VALUES ('Karmine Corp', 'EMEA', 'https://upload.wikimedia.org/wikipedia/commons/9/96/Karmine_Corp_logo.svg');
+INSERT INTO teams (name, region, url) VALUES ('KOI', 'EMEA', 'https://cdn.escharts.com/uploads/public/620/cee/0f1/620cee0f1fdcc517336552.');
+INSERT INTO teams (name, region, url) VALUES ('Natus Vincere', 'EMEA', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/NAVI-Logo.svg/1200px-NAVI-Logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('Team Heretics', 'EMEA', 'https://trackercdn.com/cdn/esports-data/fortnite/teams/receaaanr7f0vj5nk.png?v=638264054090000000');
+INSERT INTO teams (name, region, url) VALUES ('Team Liquid', 'EMEA', 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Team_Liquid_logo.svg/1200px-Team_Liquid_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('Vitality', 'EMEA', 'https://upload.wikimedia.org/wikipedia/en/4/49/Team_Vitality_logo.svg');
+INSERT INTO teams (name, region, url) VALUES ('Gentle Mates', 'EMEA', 'https://static.wikia.nocookie.net/fortnite_esports_gamepedia_en/images/5/59/Gentle_Mateslogo_square.png/revision/latest?cb=20230417163435');
+INSERT INTO teams (name, region, url) VALUES ('Giants', 'EMEA', 'https://upload.wikimedia.org/wikipedia/commons/4/41/Giants_Gaming_logo.png');
 
 -- Pacific teams
-INSERT INTO teams (name, region) VALUES ('DRX', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('DetonatioN FocusMe', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('Gen.G', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('Global Esports', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('Paper Rex', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('Rex Regum Qeon', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('T1', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('Talon', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('Team Secret', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('ZETA Division', 'Pacific');
-INSERT INTO teams (name, region) VALUES ('Bleed', 'Pacific');
+INSERT INTO teams (name, region, url) VALUES ('DRX', 'Pacific', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/DRX_logo_2023.png/1200px-DRX_logo_2023.png');
+INSERT INTO teams (name, region, url) VALUES ('DetonatioN FocusMe', 'Pacific', 'https://upload.wikimedia.org/wikipedia/en/3/3e/DetonatioN_FocusMe_logo.png');
+INSERT INTO teams (name, region, url) VALUES ('Gen.G', 'Pacific', 'https://upload.wikimedia.org/wikipedia/commons/7/77/Gen.G_Logo.svg');
+INSERT INTO teams (name, region, url) VALUES ('Global Esports', 'Pacific', 'https://static.wikia.nocookie.net/fortnite_esports_gamepedia_en/images/9/9d/Global_Esportslogo_square.png/revision/latest?cb=20181023210409');
+INSERT INTO teams (name, region, url) VALUES ('Paper Rex', 'Pacific', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Paper_Rex_logo.svg/1200px-Paper_Rex_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('Rex Regum Qeon', 'Pacific', 'https://upload.wikimedia.org/wikipedia/commons/6/69/RRQ_%28Rex_Regum_Qeon%29_Logo_%28SVG%29_-_Vector69Com.svg');
+INSERT INTO teams (name, region, url) VALUES ('T1', 'Pacific', 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/T1_logo.svg/1200px-T1_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('Talon', 'Pacific', 'https://upload.wikimedia.org/wikipedia/en/7/7c/Talon_Esports_logo.png');
+INSERT INTO teams (name, region, url) VALUES ('Team Secret', 'Pacific', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Team_Secret_logo.svg/1200px-Team_Secret_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('ZETA Division', 'Pacific', 'https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=pad%2Cheight=675%2Cq=85%2Csharpen=2%2Cwidth=1200/wp-content/uploads/zeta-division.png');
+INSERT INTO teams (name, region, url) VALUES ('Bleed', 'Pacific', 'https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=pad%2Cheight=675%2Cq=85%2Csharpen=2%2Cwidth=1200/wp-content/uploads/bleed-esports.png');
 
 -- China teams
-INSERT INTO teams (name, region) VALUES ('All Gamers', 'China');
-INSERT INTO teams (name, region) VALUES ('Bilibili', 'China');
-INSERT INTO teams (name, region) VALUES ('Edward Gaming', 'China');
-INSERT INTO teams (name, region) VALUES ('FunPlus Phoenix', 'China');
-INSERT INTO teams (name, region) VALUES ('JD Gaming', 'China');
-INSERT INTO teams (name, region) VALUES ('Nova Esports', 'China');
-INSERT INTO teams (name, region) VALUES ('Titan Esports Club', 'China');
-INSERT INTO teams (name, region) VALUES ('Trace Esports', 'China');
-INSERT INTO teams (name, region) VALUES ('TYLOO', 'China');
-INSERT INTO teams (name, region) VALUES ('Wolves Esports', 'China');
-INSERT INTO teams (name, region) VALUES ('Dragon Ranger Gaming', 'China');
+INSERT INTO teams (name, region, url) VALUES ('All Gamers', 'China', 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ed/All_Gamerslogo_square.png/revision/latest/scale-to-width-down/220?cb=20170728173235');
+INSERT INTO teams (name, region, url) VALUES ('Bilibili', 'China', 'https://upload.wikimedia.org/wikipedia/en/6/66/Bilibili_Gaming_logo_%282021%29.png');
+INSERT INTO teams (name, region, url) VALUES ('Edward Gaming', 'China', 'https://upload.wikimedia.org/wikipedia/commons/3/33/Edward_Gaming_logo.png');
+INSERT INTO teams (name, region, url) VALUES ('FunPlus Phoenix', 'China', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/FPX_Esports_logo.svg/1200px-FPX_Esports_logo.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('JD Gaming', 'China', 'https://upload.wikimedia.org/wikipedia/en/7/7d/JD_Gaming_logo.png');
+INSERT INTO teams (name, region, url) VALUES ('Nova Esports', 'China', 'https://upload.wikimedia.org/wikipedia/en/d/de/Nova_Esports_logo.png');
+INSERT INTO teams (name, region, url) VALUES ('Titan Esports Club', 'China', 'https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=pad%2Cheight=675%2Cq=85%2Csharpen=2%2Cwidth=1200/wp-content/uploads/titan-esports-club.png');
+INSERT INTO teams (name, region, url) VALUES ('Trace Esports', 'China', 'https://egamersworld.com/_next/image?url=https%3A%2F%2Fegamersworld.com%2Fuploads%2Fwildrift%2Fteams%2Ftrace-esports-logo.png&w=256&q=75');
+INSERT INTO teams (name, region, url) VALUES ('TYLOO', 'China', 'https://pbs.twimg.com/profile_images/1606560549437067264/sQCXdPUU_400x400.jpg');
+INSERT INTO teams (name, region, url) VALUES ('Wolves Esports', 'China', 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png');
+INSERT INTO teams (name, region, url) VALUES ('Dragon Ranger Gaming', 'China', 'https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=pad%2Cheight=675%2Cq=85%2Csharpen=2%2Cwidth=1200/wp-content/uploads/dragon-ranger-gaming.png');
+
 
 -- Players
 

@@ -11,6 +11,7 @@ export const ViewTeams = () => {
     const response = await fetch(url);
     const teamData = await response.json();
     setTeams(teamData);
+    console.log(teamData);
   }
 
   useEffect(() => {

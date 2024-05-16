@@ -12,6 +12,8 @@ const TeamProfile = () => {
     const response = await fetch(url);
     const teamData = await response.json();
     setTeamProfile(teamData);
+    console.log(teamData);
+    
   };
 
   useEffect(() => {
@@ -19,12 +21,13 @@ const TeamProfile = () => {
   }, []);
 
   if (!teamProfile) return <div>Loading...</div>;
-  console.log(teamProfile.name);
+  console.log(teamProfile.url);
 
   return (
-    <div>
-      <h2>{teamProfile.name}</h2>
-      <p>{teamProfile.region}</p>
+    <div className='team-profile'>
+      <h2 className='team-profile__name'>{teamProfile.name}</h2>
+      <p className='team-profile__region'>{teamProfile.region}</p>
+      <img src={teamProfile.url} alt={`${teamProfile.name} logo`} className='team-profile__logo' />
     </div>
   );
 }
