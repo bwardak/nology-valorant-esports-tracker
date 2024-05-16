@@ -9,6 +9,7 @@ import com.example.api.repositories.PlayersRepository;
 import com.example.api.repositories.TeamsRepository;
 import com.example.api.repositories.TournamentsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -92,6 +93,17 @@ public class TrackerService {
 
     // UPDATE
 
+    @Modifying
+    public Tournament updateTournament(Tournament newTournament, long id) {
+        if (!tournamentsRepository.existsById(id)) {
+            throw new NotFoundException("Tournament not found");
+        }
+
+        newTournament.setId(id);
+        tournamentsRepository.save(newTournament);
+
+        return newTournament;
+    }
 
 
 

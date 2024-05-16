@@ -77,7 +77,11 @@ public class TrackerController {
 
     // UPDATE
 
-
+    @PutMapping("/tournament/{id}")
+    public ResponseEntity<Tournament> updateTournament(@RequestBody Tournament newTournament, @PathVariable long id) {
+        Tournament updatedTournament = trackerService.updateTournament(newTournament, id);
+        return ResponseEntity.status(HttpStatus.OK).body(updatedTournament);
+    }
 
 
     // DELETE

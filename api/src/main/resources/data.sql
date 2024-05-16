@@ -191,3 +191,192 @@ INSERT INTO players (name, url, team_id) VALUES ('Shao', '', 17);
 INSERT INTO players (name, url, team_id) VALUES ('Zyppan', '', 17);
 INSERT INTO players (name, url, team_id) VALUES ('SUYGETSU', '', 17);
 INSERT INTO players (name, url, team_id) VALUES ('ardiis', '', 17);
+
+-- Team Heretics (team_id: 18)
+INSERT INTO players (name, url, team_id) VALUES ('Mixwell', '', 18);
+INSERT INTO players (name, url, team_id) VALUES ('AvovA', '', 18);
+INSERT INTO players (name, url, team_id) VALUES ('keloqz', '', 18);
+INSERT INTO players (name, url, team_id) VALUES ('Nukkye', '', 18);
+INSERT INTO players (name, url, team_id) VALUES ('Zyppan', '', 18);
+
+-- Team Liquid (team_id: 19)
+INSERT INTO players (name, url, team_id) VALUES ('soulcas', '', 19);
+INSERT INTO players (name, url, team_id) VALUES ('Jamppi', '', 19);
+INSERT INTO players (name, url, team_id) VALUES ('nivera', '', 19);
+INSERT INTO players (name, url, team_id) VALUES ('Dimasick', '', 19);
+INSERT INTO players (name, url, team_id) VALUES ('Redgar', '', 19);
+
+-- Vitality (team_id: 20)
+INSERT INTO players (name, url, team_id) VALUES ('Twisten', '', 20);
+INSERT INTO players (name, url, team_id) VALUES ('Destrian', '', 20);
+INSERT INTO players (name, url, team_id) VALUES ('MOLSI', '', 20);
+INSERT INTO players (name, url, team_id) VALUES ('BONECOLD', '', 20);
+INSERT INTO players (name, url, team_id) VALUES ('Sender', '', 20);
+
+-- Gentle Mates (team_id: 21)
+INSERT INTO players (name, url, team_id) VALUES ('Logan', '', 21);
+INSERT INTO players (name, url, team_id) VALUES ('Chiwawa', '', 21);
+INSERT INTO players (name, url, team_id) VALUES ('keloqz', '', 21);
+INSERT INTO players (name, url, team_id) VALUES ('AKUMAAAA', '', 21);
+INSERT INTO players (name, url, team_id) VALUES ('Judy', '', 21);
+
+-- Giants (team_id: 22)
+INSERT INTO players (name, url, team_id) VALUES ('Fitinho', '', 22);
+INSERT INTO players (name, url, team_id) VALUES ('hoody', '', 22);
+INSERT INTO players (name, url, team_id) VALUES ('nukkye', '', 22);
+INSERT INTO players (name, url, team_id) VALUES ('Cloud', '', 22);
+INSERT INTO players (name, url, team_id) VALUES ('RHYME', '', 22);
+
+-- DRX (team_id: 23)
+INSERT INTO players (name, url, team_id) VALUES ('stax', '', 23);
+INSERT INTO players (name, url, team_id) VALUES ('Rb', '', 23);
+INSERT INTO players (name, url, team_id) VALUES ('MaKo', '', 23);
+INSERT INTO players (name, url, team_id) VALUES ('BuZz', '', 23);
+INSERT INTO players (name, url, team_id) VALUES ('Zest', '', 23);
+
+-- DetonatioN FocusMe (team_id: 24)
+INSERT INTO players (name, url, team_id) VALUES ('Suggest', '', 24);
+INSERT INTO players (name, url, team_id) VALUES ('Seoldam', '', 24);
+INSERT INTO players (name, url, team_id) VALUES ('Anthem', '', 24);
+INSERT INTO players (name, url, team_id) VALUES ('xnfri', '', 24);
+INSERT INTO players (name, url, team_id) VALUES ('Takej', '', 24);
+
+-- Gen.G (team_id: 25)
+INSERT INTO players (name, url, team_id) VALUES ('Meteor', '', 25);
+INSERT INTO players (name, url, team_id) VALUES ('GodDead', '', 25);
+INSERT INTO players (name, url, team_id) VALUES ('k1Ng', '', 25);
+INSERT INTO players (name, url, team_id) VALUES ('TS', '', 25);
+INSERT INTO players (name, url, team_id) VALUES ('Secret', '', 25);
+
+-- Global Esports (team_id: 26)
+INSERT INTO players (name, url, team_id) VALUES ('SkRossi', '', 26);
+INSERT INTO players (name, url, team_id) VALUES ('Lightningfast', '', 26);
+INSERT INTO players (name, url, team_id) VALUES ('t3xture', '', 26);
+INSERT INTO players (name, url, team_id) VALUES ('AYRIN', '', 26);
+INSERT INTO players (name, url, team_id) VALUES ('W1nter', '', 26);
+
+-- Paper Rex (team_id: 27)
+INSERT INTO players (name, url, team_id) VALUES ('Benkai', '', 27);
+INSERT INTO players (name, url, team_id) VALUES ('Jinggg', '', 27);
+INSERT INTO players (name, url, team_id) VALUES ('d4v41', '', 27);
+INSERT INTO players (name, url, team_id) VALUES ('mindfreak', '', 27);
+INSERT INTO players (name, url, team_id) VALUES ('f0rsakeN', '', 27);
+
+-- Rex Regum Qeon (team_id: 28)
+INSERT INTO players (name, url, team_id) VALUES ('fl1pzjder', '', 28);
+INSERT INTO players (name, url, team_id) VALUES ('Emman', '', 28);
+INSERT INTO players (name, url, team_id) VALUES ('Tesseract', '', 28);
+INSERT INTO players (name, url, team_id) VALUES ('xcourager', '', 28);
+INSERT INTO players (name, url, team_id) VALUES ('EJAY', '', 28);
+
+-- T1 (team_id: 29)
+INSERT INTO players (name, url, team_id) VALUES ('Munchkin', '', 29);
+INSERT INTO players (name, url, team_id) VALUES ('xeta', '', 29);
+INSERT INTO players (name, url, team_id) VALUES ('Sayaplayer', '', 29);
+INSERT INTO players (name, url, team_id) VALUES ('ban', '', 29);
+INSERT INTO players (name, url, team_id) VALUES ('Carpe', '', 29);
+
+-- Talon (team_id: 30)
+INSERT INTO players (name, url, team_id) VALUES ('sushiboys', '', 30);
+INSERT INTO players (name, url, team_id) VALUES ('Patiphan', '', 30);
+INSERT INTO players (name, url, team_id) VALUES ('Crws', '', 30);
+INSERT INTO players (name, url, team_id) VALUES ('foxz', '', 30);
+INSERT INTO players (name, url, team_id) VALUES ('JitboyS', '', 30);
+
+-- Team Secret (team_id: 31)
+INSERT INTO players (name, url, team_id) VALUES ('DubsteP', '', 31);
+INSERT INTO players (name, url, team_id) VALUES ('JessieVash', '', 31);
+INSERT INTO players (name, url, team_id) VALUES ('BORKUM', '', 31);
+INSERT INTO players (name, url, team_id) VALUES ('Witz', '', 31);
+INSERT INTO players (name, url, team_id) VALUES ('Lmemore', '', 31);
+
+-- ZETA Division (team_id: 32)
+INSERT INTO players (name, url, team_id) VALUES ('Laz', '', 32);
+INSERT INTO players (name, url, team_id) VALUES ('SugarZ3ro', '', 32);
+INSERT INTO players (name, url, team_id) VALUES ('Dep', '', 32);
+INSERT INTO players (name, url, team_id) VALUES ('crow', '', 32);
+INSERT INTO players (name, url, team_id) VALUES ('TENNN', '', 32);
+
+-- Bleed (team_id: 33)
+INSERT INTO players (name, url, team_id) VALUES ('maxie', '', 33);
+INSERT INTO players (name, url, team_id) VALUES ('JayH', '', 33);
+INSERT INTO players (name, url, team_id) VALUES ('Crazyguy', '', 33);
+INSERT INTO players (name, url, team_id) VALUES ('retla', '', 33);
+INSERT INTO players (name, url, team_id) VALUES ('LEXY', '', 33);
+
+-- All Gamers (team_id: 34)
+INSERT INTO players (name, url, team_id) VALUES ('ququ', '', 34);
+INSERT INTO players (name, url, team_id) VALUES ('yz', '', 34);
+INSERT INTO players (name, url, team_id) VALUES ('xiaoyu', '', 34);
+INSERT INTO players (name, url, team_id) VALUES ('huya', '', 34);
+INSERT INTO players (name, url, team_id) VALUES ('pyth', '', 34);
+
+-- Bilibili (team_id: 35)
+INSERT INTO players (name, url, team_id) VALUES ('mytt', '', 35);
+INSERT INTO players (name, url, team_id) VALUES ('Foks', '', 35);
+INSERT INTO players (name, url, team_id) VALUES ('hzy', '', 35);
+INSERT INTO players (name, url, team_id) VALUES ('ZmjjKK', '', 35);
+INSERT INTO players (name, url, team_id) VALUES ('Mino', '', 35);
+
+-- Edward Gaming (team_id: 36)
+INSERT INTO players (name, url, team_id) VALUES ('ZmjjKK', '', 36);
+INSERT INTO players (name, url, team_id) VALUES ('Haodong', '', 36);
+INSERT INTO players (name, url, team_id) VALUES ('Smoggy', '', 36);
+INSERT INTO players (name, url, team_id) VALUES ('Life', '', 36);
+INSERT INTO players (name, url, team_id) VALUES ('CHICHOO', '', 36);
+
+-- FunPlus Phoenix (team_id: 37)
+INSERT INTO players (name, url, team_id) VALUES ('Bazzi', '', 37);
+INSERT INTO players (name, url, team_id) VALUES ('Jinggg', '', 37);
+INSERT INTO players (name, url, team_id) VALUES ('f0rsakeN', '', 37);
+INSERT INTO players (name, url, team_id) VALUES ('Meteor', '', 37);
+INSERT INTO players (name, url, team_id) VALUES ('esme', '', 37);
+
+-- JD Gaming (team_id: 38)
+INSERT INTO players (name, url, team_id) VALUES ('Rayz', '', 38);
+INSERT INTO players (name, url, team_id) VALUES ('mj', '', 38);
+INSERT INTO players (name, url, team_id) VALUES ('hanni', '', 38);
+INSERT INTO players (name, url, team_id) VALUES ('niko', '', 38);
+INSERT INTO players (name, url, team_id) VALUES ('zack', '', 38);
+
+-- Nova Esports (team_id: 39)
+INSERT INTO players (name, url, team_id) VALUES ('Maka', '', 39);
+INSERT INTO players (name, url, team_id) VALUES ('selly', '', 39);
+INSERT INTO players (name, url, team_id) VALUES ('aikan', '', 39);
+INSERT INTO players (name, url, team_id) VALUES ('clear', '', 39);
+INSERT INTO players (name, url, team_id) VALUES ('Boys', '', 39);
+
+-- Titan Esports Club (team_id: 40)
+INSERT INTO players (name, url, team_id) VALUES ('Ysera', '', 40);
+INSERT INTO players (name, url, team_id) VALUES ('LXY', '', 40);
+INSERT INTO players (name, url, team_id) VALUES ('Parry', '', 40);
+INSERT INTO players (name, url, team_id) VALUES ('Xerin', '', 40);
+INSERT INTO players (name, url, team_id) VALUES ('w8ting', '', 40);
+
+-- Trace Esports (team_id: 41)
+INSERT INTO players (name, url, team_id) VALUES ('Slow', '', 41);
+INSERT INTO players (name, url, team_id) VALUES ('Mirror', '', 41);
+INSERT INTO players (name, url, team_id) VALUES ('Luffy', '', 41);
+INSERT INTO players (name, url, team_id) VALUES ('Aries', '', 41);
+INSERT INTO players (name, url, team_id) VALUES ('nova', '', 41);
+
+-- TYLOO (team_id: 42)
+INSERT INTO players (name, url, team_id) VALUES ('EliGE', '', 42);
+INSERT INTO players (name, url, team_id) VALUES ('NAF', '', 42);
+INSERT INTO players (name, url, team_id) VALUES ('Stewie2k', '', 42);
+INSERT INTO players (name, url, team_id) VALUES ('Twistzz', '', 42);
+INSERT INTO players (name, url, team_id) VALUES ('FalleN', '', 42);
+
+-- Wolves Esports (team_id: 43)
+INSERT INTO players (name, url, team_id) VALUES ('LEGIJA', '', 43);
+INSERT INTO players (name, url, team_id) VALUES ('Niko', '', 43);
+INSERT INTO players (name, url, team_id) VALUES ('Hunter', '', 43);
+INSERT INTO players (name, url, team_id) VALUES ('huNter-', '', 43);
+INSERT INTO players (name, url, team_id) VALUES ('JackZ', '', 43);
+
+-- Dragon Ranger Gaming (team_id: 44)
+INSERT INTO players (name, url, team_id) VALUES ('Freeman', '', 44);
+INSERT INTO players (name, url, team_id) VALUES ('YuZhong', '', 44);
+INSERT INTO players (name, url, team_id) VALUES ('ZYX', '', 44);
+INSERT INTO players (name, url, team_id) VALUES ('kaze', '', 44);
+INSERT INTO players (name, url, team_id) VALUES ('advent', '', 44);
