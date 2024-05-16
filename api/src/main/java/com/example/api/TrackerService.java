@@ -8,6 +8,7 @@ import com.example.api.repositories.MatchesRepository;
 import com.example.api.repositories.PlayersRepository;
 import com.example.api.repositories.TeamsRepository;
 import com.example.api.repositories.TournamentsRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
@@ -108,4 +109,13 @@ public class TrackerService {
 
 
     // DELETE
+
+    @Transactional
+    public void deleteTournamentById(long id) {
+        if (!tournamentsRepository.existsById(id)) {
+            throw new NotFoundException("Tournament not found");
+        }
+
+        tournamentsRepository.deleteTournamentById(id);
+    }
 }

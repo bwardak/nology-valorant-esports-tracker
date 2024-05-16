@@ -85,4 +85,10 @@ public class TrackerController {
 
 
     // DELETE
+
+    @DeleteMapping("/tournament/{id}")
+    public ResponseEntity<Void> deleteTournamentById(@PathVariable long id) {
+        trackerService.deleteTournamentById(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
 }

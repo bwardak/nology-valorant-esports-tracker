@@ -21,4 +21,6 @@ public interface TournamentsRepository extends JpaRepository<Tournament, Long> {
 
     @Query("SELECT t FROM Tournament t WHERE t.startDate > :currentDate ORDER BY t.startDate ASC")
     Optional<Tournament> findNextTournament(@Param("currentDate") LocalDate currentDate);
+
+    void deleteTournamentById(long id);
 }

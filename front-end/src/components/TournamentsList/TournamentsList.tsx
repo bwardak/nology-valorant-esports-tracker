@@ -4,13 +4,14 @@ import "./TournamentsList.scss";
 
 type TournamentsListProps = {
   tournaments: TournamentResponse[];
+  onUpdateTournaments: () => void;
 };
-const TournamentsList = ({ tournaments }: TournamentsListProps) => {
+const TournamentsList = ({ tournaments, onUpdateTournaments }: TournamentsListProps) => {
   return (
     <>
       <div className="tournaments">
         {tournaments.map((tournament) => (
-          <Tournament tournament={tournament} key={tournament.id} />
+          <Tournament tournament={tournament} key={tournament.id} onUpdateTournament={onUpdateTournaments}/>
         ))}
       </div>
     </>

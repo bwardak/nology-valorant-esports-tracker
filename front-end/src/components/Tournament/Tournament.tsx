@@ -1,10 +1,15 @@
+import { useState } from "react";
+import EditTournament from "../../containers/EditTournament/EditTournament";
+import Button from "../Button/Button";
 import "./Tournament.scss";
 
 type TournamentProp = {
   tournament: TournamentResponse;
+  onUpdateTournament: () => void;
 };
 
-const Tournament = ({ tournament }: TournamentProp) => {
+const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
+  const [isHiddenUpdate, setIsHiddenUpdate] = useState<boolean>(true);
   const { name, location, startDate, endDate } = tournament;
 
   const parseISODate = (dateString: string): Date | null => {
@@ -26,6 +31,9 @@ const Tournament = ({ tournament }: TournamentProp) => {
   const parsedStartDate = parseISODate(startDate);
   const parsedEndDate = parseISODate(endDate);
 
+  const hideUpdateTournamentForm = () => {
+    setIsHiddenUpdate(!isHiddenUpdate);
+  };
 
   return (
     <div className="tournament-box">
@@ -34,8 +42,13 @@ const Tournament = ({ tournament }: TournamentProp) => {
         <p>Location: {location}</p>
         <p>Starts: {dateCheck(parsedStartDate)}</p>
         <p>Ends: {dateCheck(parsedEndDate)}</p>
+        <Button onClick={hideUpdateTournamentForm} text="Update Tournament" />
+        <EditTournament
+          hidden={isHiddenUpdate ? "hidden" : ""}
+          tournament={tournament}
+          onUpdateTournament={onUpdateTournament}
+        />
       </div>
-      
     </div>
   );
 };
