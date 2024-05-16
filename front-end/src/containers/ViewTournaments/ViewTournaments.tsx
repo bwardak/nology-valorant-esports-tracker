@@ -29,7 +29,7 @@ const ViewTournaments =  () => {
 
   return (
     <>
-      <h2>Tournaments: </h2>
+      <h2 className='tournaments__title'>Tournaments: </h2>
       <TournamentsList tournaments={tournaments} />
       <Button onClick={hideCreateTournamentForm} text='Create New Tournament' />
       <CreateTournaments hidden={isHidden ? "hidden" : ""} onCreateTournament={getTournaments}/>

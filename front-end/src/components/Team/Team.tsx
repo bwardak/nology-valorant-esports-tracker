@@ -11,8 +11,11 @@ const Team = ({team}: TeamProp) => {
   
   return (
     <div className='team-box'>
-      <h3>{name}</h3>
-      <p>Region: {region}</p>
+      <h3 className='team-box__name'>{name}</h3>
+      <div className='team-box__details'>
+       <p>Region: {region}</p> 
+      </div>
+      
     </div>
   )
 };

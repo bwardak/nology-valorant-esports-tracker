@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import TeamsList from "../../components/TeamsList/TeamsList";
+import './ViewTeams.scss'
 
 export const ViewTeams = () => {
   const [teams, setTeams] = useState<TeamResponse[]>([]);
@@ -19,7 +20,7 @@ export const ViewTeams = () => {
 
   return (
     <>
-      <h2>Teams: </h2>
+      <h2 className="teams__title">Teams: </h2>
       <TeamsList teams={teams} />
     </>
   )

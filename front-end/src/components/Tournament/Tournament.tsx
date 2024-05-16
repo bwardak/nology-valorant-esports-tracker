@@ -29,10 +29,13 @@ const Tournament = ({ tournament }: TournamentProp) => {
 
   return (
     <div className="tournament-box">
-      <h3>{name}</h3>
-      <p>Location: {location}</p>
-      <p>Starts: {dateCheck(parsedStartDate)}</p>
-      <p>Ends: {dateCheck(parsedEndDate)}</p>
+      <h3 className="tournament-box__name">{name}</h3>
+      <div className="tournament-box__details">
+        <p>Location: {location}</p>
+        <p>Starts: {dateCheck(parsedStartDate)}</p>
+        <p>Ends: {dateCheck(parsedEndDate)}</p>
+      </div>
+      
     </div>
   );
 };
