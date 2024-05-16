@@ -28,7 +28,8 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
     }
     return "N/A";
   };
-
+  console.log(tournament.id);
+  
   const parsedStartDate = parseISODate(startDate);
   const parsedEndDate = parseISODate(endDate);
 

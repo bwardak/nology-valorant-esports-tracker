@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import Tournament from "../Tournament/Tournament";
 import "./TournamentsList.scss";
 
@@ -11,7 +12,9 @@ const TournamentsList = ({ tournaments, onUpdateTournaments }: TournamentsListPr
     <>
       <div className="tournaments">
         {tournaments.map((tournament) => (
-          <Tournament tournament={tournament} key={tournament.id} onUpdateTournament={onUpdateTournaments}/>
+          <Link to={`/tournament/${tournament.id}`} key={tournament.id} className="tournaments__link">
+            <Tournament tournament={tournament} key={tournament.id} onUpdateTournament={onUpdateTournaments}/>
+          </Link>
         ))}
       </div>
     </>
