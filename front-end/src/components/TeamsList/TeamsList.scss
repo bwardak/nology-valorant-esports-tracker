@@ -1,2 +1,8 @@
 @use '../../styles/Variables.scss' as *;
 
+.teams {
+  &__link {
+    text-decoration: none;
+  }
+}
+

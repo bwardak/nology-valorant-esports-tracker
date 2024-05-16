@@ -94,6 +94,10 @@ public class TrackerService {
         return tournamentsRepository.findById(id).orElseThrow(() -> new NotFoundException("Tournament Not Found"));
     }
 
+    public Team getTeamById(long id) {
+        return teamsRepository.findById(id).orElseThrow(() -> new NotFoundException("Team Not Found"));
+    }
+
     // UPDATE
 
     @Modifying

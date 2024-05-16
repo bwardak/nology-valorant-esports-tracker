@@ -79,6 +79,11 @@ public class TrackerController {
         return ResponseEntity.status(HttpStatus.OK).body(trackerService.getTournamentById(id));
     }
 
+    @GetMapping("/team/{id}")
+    public ResponseEntity<Team> getTeamById(@PathVariable long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(trackerService.getTeamById(id));
+    }
+
 
     // UPDATE
 
