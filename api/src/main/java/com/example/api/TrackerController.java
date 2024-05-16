@@ -69,7 +69,7 @@ public class TrackerController {
         return ResponseEntity.status(HttpStatus.OK).body(trackerService.getAllMatches());
     }
 
-    @GetMapping("/tournament/latest")
+    @GetMapping("/tournaments/latest")
     public Optional<Tournament> getLatestTournament() {
         return trackerService.getLatestTournament();
     }

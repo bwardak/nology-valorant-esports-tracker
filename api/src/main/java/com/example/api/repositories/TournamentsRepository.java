@@ -16,9 +16,9 @@ import java.util.Optional;
 public interface TournamentsRepository extends JpaRepository<Tournament, Long> {
     List<Tournament> getAllByOrderById();
 
-    @Query("SELECT tournament FROM tournament WHERE tournament.startDate <= :currentDate and tournament.endDate >= :currentDate ORDER BY tournament.startDate DESC")
-    Optional<Tournament> findCurrentTournament(@Param("currentDate")LocalDate currentDate);
+    @Query("SELECT t FROM Tournament t WHERE t.startDate <= :currentDate AND t.endDate >= :currentDate ORDER BY t.startDate DESC")
+    Optional<Tournament> findCurrentTournament(@Param("currentDate") LocalDate currentDate);
 
-    @Query("SELECT tournament FROM Tournament tournament WHERE tournament.startDate > :currentDate ORDER BY tournament.startDate ASC")
+    @Query("SELECT t FROM Tournament t WHERE t.startDate > :currentDate ORDER BY t.startDate ASC")
     Optional<Tournament> findNextTournament(@Param("currentDate") LocalDate currentDate);
 }

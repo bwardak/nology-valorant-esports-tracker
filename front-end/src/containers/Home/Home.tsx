@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SectionTiles from '../../components/SectionTiles/SectionTiles';
 import './Home.scss';
+import LatestTournamentTile from '../../components/LatestTournamentTile/LatestTournamentTile';
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
             buttonText={"View Tournaments"}
           />
         </Link>
-        
+        <LatestTournamentTile />
       </div>
     </>
   );

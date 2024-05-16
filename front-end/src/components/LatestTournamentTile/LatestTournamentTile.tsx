@@ -1,21 +1,22 @@
 import { useEffect, useState } from 'react';
 import './LatestTournamentTile.scss';
 
-export const LatestTournamentTile = () => {
+const LatestTournamentTile = () => {
   const [tournament, setTournament] = useState<TournamentResponse>();
 
   const getLatestTournament = async () => {
-    let url = "http://localhost:8080/tournament/latest";
+    let url = "http://localhost:8080/tournaments/latest";
 
     const response = await fetch(url);
     const latestTournamentData = await response.json();
-
+    console.log(latestTournamentData);
+    
     setTournament(latestTournamentData);
   }
 
 
   useEffect(() => {
-    getLatestTournament
+    getLatestTournament()
   },[])
 
   if(!tournament) {
@@ -31,3 +32,5 @@ export const LatestTournamentTile = () => {
     </div>
   )
 }
+
+export default LatestTournamentTile;
