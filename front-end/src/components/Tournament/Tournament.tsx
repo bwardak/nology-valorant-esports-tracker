@@ -28,7 +28,7 @@ const Tournament = ({ tournament }: TournamentProp) => {
 
 
   return (
-    <div>
+    <div className="tournament-box">
       <h3>{name}</h3>
       <p>Location: {location}</p>
       <p>Starts: {dateCheck(parsedStartDate)}</p>

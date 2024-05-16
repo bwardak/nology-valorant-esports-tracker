@@ -3,11 +3,47 @@
 .home {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    text-align: start;
+    width: 100%;
+    margin: 10px 0 10px 20px;
+    color: $color-pink;
+  }
+
+  &__subtitle {
+    text-align: end;
+    font-size: 0.8rem;
+    color: $color-bluey-grey;
+  }
+
+  &__section {
+    display: block;
+    width: 300px;
+    height: 200px;
+    background-color: $color-grey-dark;
+    text-decoration: none;
+    color: $color-pink;
+    margin: 50px 0;
+    z-index: 0;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .home {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   &__title {
     text-align: center;
     width: 300px;
+  }
+
+  &__section-tiles {
+    display: flex;
   }
 
   &__section {
@@ -17,7 +53,8 @@
     background-color: $color-grey-dark;
     text-decoration: none;
     color: $color-pink;
-    margin: 50px 0;
+    margin: 50px 40px;
     z-index: 0;
   }
+}
 }

@@ -1,3 +1,6 @@
 @use './styles/Reset.scss';
 @use './styles/Variables.scss' as *;
 
+body {
+  font-family: $font-standard;
+}

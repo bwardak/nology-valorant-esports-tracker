@@ -8,10 +8,12 @@ const Home = () => {
     <>
       <div className="home">
         <h1 className="home__title">Valorant Esports Tracker</h1>
-        <h3 className="home__subtitle">
+        <h4 className="home__subtitle">
           A hub for all the latest valorant tournaments!
-        </h3>
-        <Link to={'/tournaments'} key={1} className='home__section'>
+        </h4>
+
+        <div className='home__section-tiles'>
+          <Link to={"/tournaments"} key={1} className="home__section">
           <SectionTiles
             title={"Tournaments"}
             imgUrl={
@@ -19,7 +21,20 @@ const Home = () => {
             }
             buttonText={"View Tournaments"}
           />
-        </Link>
+          </Link>
+
+          <Link to={"/teams"} key={2} className="home__section">
+            <SectionTiles
+              title={"Teams"}
+              imgUrl={
+                "https://files.bo3.gg/uploads/news/28689/title_image/960x480-4d2e3fd3e3dfd827885ecc92e992c0a6.webp"
+              }
+              buttonText={"View Teams"}
+            />
+          </Link>
+        </div>
+        
+
         <LatestTournamentTile />
       </div>
     </>

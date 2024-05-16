@@ -1,6 +1,6 @@
+@use '../../styles/Variables.scss' as *;
+
 .teams {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  text-align: center;
+  font-family: $font-standard;
 }
