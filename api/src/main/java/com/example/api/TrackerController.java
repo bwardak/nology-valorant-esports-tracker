@@ -74,6 +74,11 @@ public class TrackerController {
         return trackerService.getLatestTournament();
     }
 
+    @GetMapping("/tournament/{id}")
+    public ResponseEntity<Tournament> getTournamentById(@PathVariable long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(trackerService.getTournamentById(id));
+    }
+
 
     // UPDATE
 

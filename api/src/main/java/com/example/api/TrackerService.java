@@ -90,7 +90,9 @@ public class TrackerService {
         return new ArrayList<>(matchesRepository.getAllByOrderById());
     }
 
-
+    public Tournament getTournamentById(long id) {
+        return tournamentsRepository.findById(id).orElseThrow(() -> new NotFoundException("Tournament Not Found"));
+    }
 
     // UPDATE
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import EditTournament from "../../containers/EditTournament/EditTournament";
 import Button from "../Button/Button";
 import "./Tournament.scss";
+import DeleteTournaments from "../../containers/DeleteTournaments/DeleteTournaments";
 
 type TournamentProp = {
   tournament: TournamentResponse;
@@ -48,6 +49,7 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
           tournament={tournament}
           onUpdateTournament={onUpdateTournament}
         />
+        <DeleteTournaments tournament={tournament}/>
       </div>
     </div>
   );
