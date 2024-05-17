@@ -5,9 +5,10 @@ type EditTournamentProps = {
   hidden: string;
   tournament: TournamentResponse;
   onUpdateTournament: () => void;
+  onClose: () => void;
 };
 
-const EditTournament = ({ hidden, tournament, onUpdateTournament }: EditTournamentProps) => {
+const EditTournament = ({ hidden, tournament, onUpdateTournament, onClose }: EditTournamentProps) => {
   const [name, setName] = useState(tournament.name);
   const [location, setLocation] = useState(tournament.location);
   const [startDate, setStartDate] = useState(tournament.startDate);
@@ -49,44 +50,51 @@ const EditTournament = ({ hidden, tournament, onUpdateTournament }: EditTourname
   };
 
   return (
-    <form className={`update_tournament ${hidden}`} onSubmit={handleSubmit}>
-      <label htmlFor="name">Name: </label>
-      <input
-        type="text"
-        name="name"
-        value={name}
-        id="create_tournament__name"
-        onChange={(e) => setName(e.target.value)}
-      />
+    <div className={`popup ${hidden}`}>
+      <div className="popup__content">
+        <button className="close-button" onClick={onClose}>
+          X
+        </button>
+        <form className={`update_tournament`} onSubmit={handleSubmit}>
+          <label htmlFor="name">Name: </label>
+          <input
+            type="text"
+            name="name"
+            value={name}
+            id="create_tournament__name"
+            onChange={(e) => setName(e.target.value)}
+          />
 
-      <label htmlFor="location">Location: </label>
-      <input
-        type="text"
-        name="location"
-        value={location}
-        onChange={(e) => setLocation(e.target.value)}
-        id="create_tournament__location"
-      />
+          <label htmlFor="location">Location: </label>
+          <input
+            type="text"
+            name="location"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            id="create_tournament__location"
+          />
 
-      <label htmlFor="start_date">Start Date: </label>
-      <input
-        type="date"
-        name="start_date"
-        value={startDate}
-        onChange={(e) => setStartDate(e.target.value)}
-        id="create_tournament__start_date"
-      />
+          <label htmlFor="start_date">Start Date: </label>
+          <input
+            type="date"
+            name="start_date"
+            value={startDate}
+            onChange={(e) => setStartDate(e.target.value)}
+            id="create_tournament__start_date"
+          />
 
-      <label htmlFor="end_date">End Date: </label>
-      <input
-        type="date"
-        name="end_date"
-        value={endDate}
-        onChange={(e) => setEndDate(e.target.value)}
-        id="create_tournament__end_date"
-      />
-      <button type="submit">Update</button>
-    </form>
+          <label htmlFor="end_date">End Date: </label>
+          <input
+            type="date"
+            name="end_date"
+            value={endDate}
+            onChange={(e) => setEndDate(e.target.value)}
+            id="create_tournament__end_date"
+          />
+          <button type="submit">Update</button>
+        </form>
+      </div>
+    </div>
   );
 };
 

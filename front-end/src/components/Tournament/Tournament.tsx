@@ -48,23 +48,23 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
       >
         <div className="tournament-box__event">
           <h3 className="tournament-box__name">{name}</h3>
-          <img src={url} alt="" className="tournament-box__details__image"/> 
+          <img src={url} alt="" className="tournament-box__details__image" />
         </div>
         <div className="tournament-box__details">
-          
           <p>Location: {location}</p>
           <p>Starts: {dateCheck(parsedStartDate)}</p>
           <p>Ends: {dateCheck(parsedEndDate)}</p>
         </div>
       </Link>
-        <Button onClick={hideUpdateTournamentForm} text="Update Tournament" />
-        <EditTournament
-          hidden={isHiddenUpdate ? "hidden" : ""}
-          tournament={tournament}
-          onUpdateTournament={onUpdateTournament}
-        />
-         <DeleteTournaments tournament={tournament} /> 
-      </div>
+      <Button onClick={hideUpdateTournamentForm} text="Update Tournament" />
+      <EditTournament
+        hidden={isHiddenUpdate ? "hidden" : ""}
+        tournament={tournament}
+        onUpdateTournament={onUpdateTournament}
+        onClose={hideUpdateTournamentForm}
+      />
+      <DeleteTournaments tournament={tournament} />
+    </div>
   );
 };
 
