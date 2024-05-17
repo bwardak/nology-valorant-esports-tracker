@@ -4,4 +4,5 @@ type TournamentResponse = {
   location: string;
   startDate: string;
   endDate: string;
+  url: string;
 };

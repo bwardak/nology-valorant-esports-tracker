@@ -12,7 +12,8 @@
   &__name {
     margin: 10px 5px;
     color: $color-grey-dark;
-     grid-column: 1 / span 1;
+    grid-column: 1 / span 1;
+    align-self: flex-start;
   }
 
   &__details {
@@ -21,7 +22,7 @@
     grid-column: 1 / span 2;
 
     .team-box__region {
-      margin-top: -35px;
+      margin-top: -55px;
     }
   }
 

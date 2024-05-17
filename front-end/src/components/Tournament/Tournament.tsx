@@ -12,7 +12,7 @@ type TournamentProp = {
 
 const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
   const [isHiddenUpdate, setIsHiddenUpdate] = useState<boolean>(true);
-  const { name, location, startDate, endDate } = tournament;
+  const { name, location, startDate, endDate, url } = tournament;
 
   const parseISODate = (dateString: string): Date | null => {
     const date = new Date(dateString);
@@ -37,6 +37,8 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
     setIsHiddenUpdate(!isHiddenUpdate);
   };
 
+  console.log(url);
+  
   return (
     <div className="tournament-box">
       <Link
@@ -44,12 +46,16 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
         key={tournament.id}
         className="tournaments__link"
       >
-        <h3 className="tournament-box__name">{name}</h3>
-      <div className="tournament-box__details">
-        <p>Location: {location}</p>
-        <p>Starts: {dateCheck(parsedStartDate)}</p>
-        <p>Ends: {dateCheck(parsedEndDate)}</p>
-      </div>
+        <div className="tournament-box__event">
+          <h3 className="tournament-box__name">{name}</h3>
+          <img src={url} alt="" className="tournament-box__details__image"/> 
+        </div>
+        <div className="tournament-box__details">
+          
+          <p>Location: {location}</p>
+          <p>Starts: {dateCheck(parsedStartDate)}</p>
+          <p>Ends: {dateCheck(parsedEndDate)}</p>
+        </div>
       </Link>
         <Button onClick={hideUpdateTournamentForm} text="Update Tournament" />
         <EditTournament
@@ -57,7 +63,7 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
           tournament={tournament}
           onUpdateTournament={onUpdateTournament}
         />
-        <DeleteTournaments tournament={tournament} />
+         <DeleteTournaments tournament={tournament} /> 
       </div>
   );
 };

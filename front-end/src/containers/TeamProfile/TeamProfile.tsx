@@ -25,19 +25,19 @@ const TeamProfile = () => {
 
   return (
     <div className="team-profile">
-      <h2 className="team-profile__name">{teamProfile.name}</h2>
-      <p className="team-profile__region">{teamProfile.region}</p>
       <img
         src={teamProfile.url}
         alt={`${teamProfile.name} logo`}
         className="team-profile__logo"
       />
-      <ul>
+      <h2 className="team-profile__name">{teamProfile.name}</h2>
+      
+      <p className="team-profile__region">{teamProfile.region}</p>
+      
+      <ul className='team-profile__players'>
         {teamProfile.players.map((player) => (
           <li key={player.id}>
-            <a href={player.url} target="_blank" rel="noopener noreferrer">
               {player.name}
-            </a>
           </li>
         ))}
       </ul>

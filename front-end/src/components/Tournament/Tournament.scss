@@ -3,6 +3,11 @@
 .tournament-box {
   border-top: 2px solid $color-grey-light;
   margin: 0px 30px;
+
+  &__event {
+    display: flex;
+    justify-content: space-between;
+  }
   &__name {
     margin: 10px 5px;
     color: $color-grey-dark;
@@ -11,6 +16,12 @@
   &__details {
     margin: 0 5px 5px;
     color: $color-pink;
+
+    &__image {
+      width: 50px;
+      height: 50px;
+      margin-top: 5px;
+    }
   }
   
 }

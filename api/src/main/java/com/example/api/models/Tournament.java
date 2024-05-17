@@ -14,6 +14,15 @@ public class Tournament {
     private String name;
     private LocalDate startDate;
     private LocalDate endDate;
+    private String url;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public long getId() {
         return id;
