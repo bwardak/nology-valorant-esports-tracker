@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Valorant Esports Tracker Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my Valorant Esports Tracker Hub. This is my final project for _nology, in which we create a fullstack application.
 
-Currently, two official plugins are available:
+VETH is a platform for tracking past and upcoming Valorant tournaments and matches, with all the teams and players involved. Built with a modern tech stack including React, Java, Spring Boot, and MySQL, this application delivers an easy to use experience for esports enthusiasts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Track Tournaments: View details of past and upcoming tournaments.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Team Information: Browse through a list of participating teams and their profiles.
 
-- Configure the top-level `parserOptions` property like this:
+- Player Profiles: Access detailed information about professional Valorant players.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Match Details: Get insights into match results and schedules.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technologies Used
+
+- Frontend: React
+
+- Backend: Java, Spring Boot
+
+- Database: MySQL
+
+- ORM: Hibernate (JPA)
+
+## API Endpoints
+
+- GET /tournaments: Retrieve a list of all tournaments.
+- GET /tournaments/{id}: Retrieve details of a specific tournament.
+- POST /tournaments: Add a new tournament.
+- DELETE /tournaments/{id}: Delete a specific tournament.
+- GET /teams: Retrieve a list of all teams.
+- GET /players: Retrieve a list of all players.
+- GET /matches: Retrieve a list of all matches.
