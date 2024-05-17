@@ -30,4 +30,17 @@
     margin-top: 30px;
     margin-bottom: 5px;
   }
+
+  &__venue-text {
+    margin: 10px;
+    color: $color-grey-dark;
+  }
+
+  &__venue {
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 30px;
+    border: 2px solid $color-grey-dark;
+  }
 }

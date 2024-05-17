@@ -36,8 +36,9 @@ const TeamProfile = () => {
       
       <ul className='team-profile__players'>
         {teamProfile.players.map((player) => (
-          <li key={player.id}>
-              {player.name}
+          <li key={player.id} className='player'>
+              - {player.name}
+              <img src={player.url} alt="" className='player-image'/>
           </li>
         ))}
       </ul>

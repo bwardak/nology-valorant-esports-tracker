@@ -21,9 +21,23 @@
 
   &__players {
     margin-top: 30px;
+    
 
     li {
       margin: 5px;
+      font-weight: bold;
     }
   }
+}
+
+.player-image {
+  height: 65px;
+  width: 65px;
+  border: 2px solid $color-grey-dark;
+  padding: 5px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
 }

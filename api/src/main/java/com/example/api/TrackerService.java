@@ -95,7 +95,9 @@ public class TrackerService {
     }
 
     public Tournament getTournamentById(long id) {
-        return tournamentsRepository.findById(id).orElseThrow(() -> new NotFoundException("Tournament Not Found"));
+        Tournament tournament = tournamentsRepository.findById(id).orElseThrow(() -> new NotFoundException("Tournament Not Found"));
+        System.out.println("Fetched Tournament: " + tournament.getVenueUrl());
+        return tournament;
     }
 
     public Team getTeamById(long id) {

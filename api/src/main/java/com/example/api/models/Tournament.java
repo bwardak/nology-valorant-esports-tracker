@@ -15,6 +15,15 @@ public class Tournament {
     private LocalDate startDate;
     private LocalDate endDate;
     private String url;
+    private String venueUrl;
+
+    public String getVenueUrl() {
+        return venueUrl;
+    }
+
+    public void setVenueUrl(String venueUrl) {
+        this.venueUrl = venueUrl;
+    }
 
     public String getUrl() {
         return url;

@@ -25,5 +25,6 @@ CREATE TABLE IF NOT EXISTS tournaments (
     location VARCHAR(255) DEFAULT NULL,
     start_date DATE DEFAULT NULL,
     end_date DATE DEFAULT NULL,
-    url VARCHAR(255) DEFAULT NULL
+    url VARCHAR(255) DEFAULT NULL,
+    venue_url VARCHAR(255) DEFAULT NULL
 );

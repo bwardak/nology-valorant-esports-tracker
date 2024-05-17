@@ -12,6 +12,10 @@ const TournamentProfile = () => {
     const response = await fetch(url);
     const tournamentData = await response.json();
     setTournamentProfile(tournamentData);
+    console.log(response);
+    
+    console.log(tournamentData);
+    
   };
 
   useEffect(() => {
@@ -19,7 +23,7 @@ const TournamentProfile = () => {
   }, []);
 
   if (!tournamentProfile) return <div>Loading...</div>;
-  console.log(tournamentProfile.name);
+  console.log(tournamentProfile.venueUrl);
 
   return (
     <div className="tournament-profile">
@@ -29,9 +33,21 @@ const TournamentProfile = () => {
         className="tournament-profile__logo"
       />
       <h2 className="tournament-profile__name">{tournamentProfile.name}</h2>
-      <p className="tournament-profile__location">{tournamentProfile.location}</p>
-      <p className='tournament-profile__start-date'>Start: {tournamentProfile.startDate}</p>
-      <p className='tournament-profile__end-date'>End: {tournamentProfile.endDate}</p>
+      <p className="tournament-profile__location">
+        {tournamentProfile.location}
+      </p>
+      <p className="tournament-profile__start-date">
+        Start: {tournamentProfile.startDate}
+      </p>
+      <p className="tournament-profile__end-date">
+        End: {tournamentProfile.endDate}
+      </p>
+      <p className="tournament-profile__venue-text">Venue: </p>
+      <img
+        src={tournamentProfile.venueUrl}
+        alt=""
+        className="tournament-profile__venue"
+      />
     </div>
   );
 };
