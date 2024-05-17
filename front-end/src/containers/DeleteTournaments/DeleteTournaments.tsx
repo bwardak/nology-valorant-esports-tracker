@@ -28,9 +28,13 @@ const DeleteTournaments = ({tournament}: DeleteTournamentsProps) => {
     }
   }
 
+  const performDelete = (): void => {
+    handleDeleteTournament()
+  }
+
 
   return (
-    <button onClick={handleDeleteTournament}>Delete</button>
+    <Button text='Delete' onClick={performDelete} />
   )
 }
 
