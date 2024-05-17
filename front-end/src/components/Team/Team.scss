@@ -4,10 +4,11 @@
   border-top: 2px solid $color-grey-light;
   margin: 0px 30px;
   display: grid;
-  grid-template-columns: auto 70px; // Adjust the second column width as needed
+  grid-template-columns: auto 70px; 
   grid-template-rows: auto;
-  align-items: center; // Align items vertically centered
-  gap: 10px; // Adjust the gap as needed
+  align-items: center; 
+  gap: 10px; 
+
 
   &__name {
     margin: 10px 5px;
@@ -30,7 +31,7 @@
     margin-top: 10px;
     width: 70px;
     height: 70px;
-    grid-column: 2 / span 1; // Ensure the logo takes the second column
+    grid-column: 2 / span 1; 
     justify-self: end;
   }
 
@@ -49,5 +50,34 @@
   &__player {
     text-decoration: none;
     color: $color-grey-dark;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-box {
+    border-top: 2px solid $color-grey-light;
+    margin: 0px 30px;
+    display: grid;
+    grid-template-columns: 360px 70px; 
+    grid-template-rows: auto;
+    align-items: center; 
+    gap: 10px;
+    flex: 0 1 calc(50% - 70px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .team-box {
+    border-top: 2px solid $color-grey-light;
+    margin: 0px 30px;
+    display: grid;
+    grid-template-columns: 560px 70px; 
+    grid-template-rows: auto;
+    align-items: center; 
+    gap: 10px;
+    flex: 0 1 calc(50% - 70px);
+    margin-bottom: 20px;
+    width: 100%;
   }
 }

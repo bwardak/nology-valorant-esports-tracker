@@ -25,3 +25,10 @@
   }
   
 }
+
+@media (min-width: 1024px) {
+  .tournament-box {
+    flex: 0 1 calc(50% - 70px);
+    margin-bottom: 20px;
+  }
+}
