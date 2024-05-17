@@ -23,7 +23,7 @@ const LatestTournamentTile = () => {
   },[])
 
   if(!tournament) {
-    return <div>Loading...</div>
+    return <div>No Upcoming Tournaments</div>
   }
 
   return (

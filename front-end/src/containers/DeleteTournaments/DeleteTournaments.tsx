@@ -1,6 +1,7 @@
 import { FormEvent } from 'react';
 import './DeleteTournaments.scss';
 import Button from '../../components/Button/Button';
+import { Link } from 'react-router-dom';
 
 type DeleteTournamentsProps = {
   tournament: TournamentResponse;
@@ -34,7 +35,10 @@ const DeleteTournaments = ({tournament}: DeleteTournamentsProps) => {
 
 
   return (
-    <Button text='Delete' onClick={performDelete} />
+    <Link to={'/tournaments'}>
+      <Button text='Delete' onClick={performDelete} />
+    </Link>
+    
   )
 }
 

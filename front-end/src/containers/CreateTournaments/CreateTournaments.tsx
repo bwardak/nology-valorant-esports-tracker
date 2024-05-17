@@ -93,7 +93,7 @@ const CreateTournaments = ({hidden, onCreateTournament, onClose}: CreateTourname
             type="text"
             name="url"
             value={url}
-            onChange={(e) => setEndDate(e.target.value)}
+            onChange={(e) => setUrl(e.target.value)}
             id="create_tournament__url"
           />
           <button type="submit">Add</button>

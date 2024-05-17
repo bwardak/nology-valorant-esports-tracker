@@ -5,5 +5,5 @@ type TournamentResponse = {
   startDate: string;
   endDate: string;
   url: string;
-  venueUrl: string;
+  venueUrl?: string;
 };
