@@ -1,9 +1,22 @@
-import { Link } from 'react-router-dom';
-import SectionTiles from '../../components/SectionTiles/SectionTiles';
-import './Home.scss';
-import LatestTournamentTile from '../../components/LatestTournamentTile/LatestTournamentTile';
+import { Link } from "react-router-dom";
+import SectionTiles from "../../components/SectionTiles/SectionTiles";
+import "./Home.scss";
+import LatestTournamentTile from "../../components/LatestTournamentTile/LatestTournamentTile";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [tournament, setTournament] = useState<TournamentResponse>();
+
+  const getLatestTournament = async () => {
+    let url = "http://localhost:8080/tournaments/latest";
+    const response = await fetch(url);
+    const latestTournamentData = await response.json();
+    setTournament(latestTournamentData);
+  };
+
+  useEffect(() => {
+    getLatestTournament();
+  }, []);
   return (
     <>
       <div className="home">
@@ -12,15 +25,15 @@ const Home = () => {
           A hub for all the latest valorant tournaments!
         </h4>
 
-        <div className='home__section-tiles'>
+        <div className="home__section-tiles">
           <Link to={"/tournaments"} key={1} className="home__section">
-          <SectionTiles
-            title={"Tournaments"}
-            imgUrl={
-              "https://editors.dexerto.com/wp-content/uploads/2023/03/05/Fnatic-VCT-LOCK-IN-trophy.jpg"
-            }
-            buttonText={"View Tournaments"}
-          />
+            <SectionTiles
+              title={"Tournaments"}
+              imgUrl={
+                "https://editors.dexerto.com/wp-content/uploads/2023/03/05/Fnatic-VCT-LOCK-IN-trophy.jpg"
+              }
+              buttonText={"View Tournaments"}
+            />
           </Link>
 
           <Link to={"/teams"} key={2} className="home__section">
@@ -33,9 +46,14 @@ const Home = () => {
             />
           </Link>
         </div>
-        
 
-        <LatestTournamentTile />
+        <Link
+          to={`/tournament/${tournament?.id}`}
+          key={3}
+          className="home__latest"
+        >
+          <LatestTournamentTile />
+        </Link>
       </div>
     </>
   );

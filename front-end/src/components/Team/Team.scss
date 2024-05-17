@@ -1,14 +1,13 @@
-@use '../../styles/Variables.scss' as *;
+@use "../../styles/Variables.scss" as *;
 
 .team-box {
   border-top: 2px solid $color-grey-light;
   margin: 0px 30px;
   display: grid;
-  grid-template-columns: auto 70px; 
+  grid-template-columns: auto 70px;
   grid-template-rows: auto;
-  align-items: center; 
-  gap: 10px; 
-
+  align-items: center;
+  gap: 10px;
 
   &__name {
     margin: 10px 5px;
@@ -31,7 +30,7 @@
     margin-top: 10px;
     width: 70px;
     height: 70px;
-    grid-column: 2 / span 1; 
+    grid-column: 2 / span 1;
     justify-self: end;
   }
 
@@ -58,9 +57,9 @@
     border-top: 2px solid $color-grey-light;
     margin: 0px 30px;
     display: grid;
-    grid-template-columns: 360px 70px; 
+    grid-template-columns: 360px 70px;
     grid-template-rows: auto;
-    align-items: center; 
+    align-items: center;
     gap: 10px;
     flex: 0 1 calc(50% - 70px);
     margin-bottom: 20px;
@@ -72,9 +71,9 @@
     border-top: 2px solid $color-grey-light;
     margin: 0px 30px;
     display: grid;
-    grid-template-columns: 560px 70px; 
+    grid-template-columns: 560px 70px;
     grid-template-rows: auto;
-    align-items: center; 
+    align-items: center;
     gap: 10px;
     flex: 0 1 calc(50% - 70px);
     margin-bottom: 20px;

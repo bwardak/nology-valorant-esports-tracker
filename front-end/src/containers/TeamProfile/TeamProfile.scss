@@ -1,11 +1,11 @@
-@use '../../styles/Variables.scss' as *;
+@use "../../styles/Variables.scss" as *;
 
 .team-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  
+
   &__region {
     color: $color-pink;
   }
@@ -21,7 +21,6 @@
 
   &__players {
     margin-top: 30px;
-    
 
     li {
       margin: 5px;

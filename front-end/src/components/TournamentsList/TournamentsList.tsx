@@ -1,5 +1,4 @@
 
-import { Link } from "react-router-dom";
 import Tournament from "../Tournament/Tournament";
 import "./TournamentsList.scss";
 

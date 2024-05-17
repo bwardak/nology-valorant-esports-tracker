@@ -1,13 +1,16 @@
-import { FormEvent, useState } from 'react';
-import './CreateTournaments.scss';
-import Button from '../../components/Button/Button';
+import { FormEvent, useState } from "react";
+import "./CreateTournaments.scss";
 
 type CreateTournamentsProps = {
   hidden: string;
   onCreateTournament: () => void;
   onClose: () => void;
 };
-const CreateTournaments = ({hidden, onCreateTournament, onClose}: CreateTournamentsProps) => {
+const CreateTournaments = ({
+  hidden,
+  onCreateTournament,
+  onClose,
+}: CreateTournamentsProps) => {
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [startDate, setStartDate] = useState("");
@@ -37,12 +40,12 @@ const CreateTournaments = ({hidden, onCreateTournament, onClose}: CreateTourname
 
     const newTournament = { name, location, startDate, endDate, url };
 
-    CreateTournament(newTournament)
+    CreateTournament(newTournament);
     setName("");
     setLocation("");
     setStartDate("");
     setEndDate("");
-    setUrl("")
+    setUrl("");
   };
 
   return (
@@ -101,6 +104,6 @@ const CreateTournaments = ({hidden, onCreateTournament, onClose}: CreateTourname
       </div>
     </div>
   );
-}
+};
 
 export default CreateTournaments;

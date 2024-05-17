@@ -21,15 +21,15 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
 
   const dateCheck = (date: Date | null) => {
     if (date) {
-      return date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
+      return date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
       });
     }
     return "N/A";
   };
-  
+
   const parsedStartDate = parseISODate(startDate);
   const parsedEndDate = parseISODate(endDate);
 
@@ -37,8 +37,6 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
     setIsHiddenUpdate(!isHiddenUpdate);
   };
 
-  console.log(url);
-  
   return (
     <div className="tournament-box">
       <Link

@@ -1,4 +1,4 @@
-@use '../../styles/Variables.scss' as *;
+@use "../../styles/Variables.scss" as *;
 
 .home {
   display: flex;
@@ -28,33 +28,36 @@
     margin: 50px 0;
     z-index: 0;
   }
-}
 
+  .home__latest {
+    text-decoration: none;
+  }
+}
 
 @media (min-width: 1024px) {
   .home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  &__title {
-    text-align: center;
-    width: 300px;
-  }
-
-  &__section-tiles {
     display: flex;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      text-align: center;
+      width: 300px;
+    }
 
-  &__section {
-    display: block;
-    width: 500px;
-    height: 300px;
-    background-color: $color-grey-dark;
-    text-decoration: none;
-    color: $color-pink;
-    margin: 50px 40px;
-    z-index: 0;
+    &__section-tiles {
+      display: flex;
+    }
+
+    &__section {
+      display: block;
+      width: 500px;
+      height: 300px;
+      background-color: $color-grey-dark;
+      text-decoration: none;
+      color: $color-pink;
+      margin: 50px 40px;
+      z-index: 0;
+    }
   }
-}
 }

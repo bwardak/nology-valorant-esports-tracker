@@ -1,5 +1,5 @@
 import "./EditTournament.scss";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 
 type EditTournamentProps = {
   hidden: string;
@@ -8,7 +8,12 @@ type EditTournamentProps = {
   onClose: () => void;
 };
 
-const EditTournament = ({ hidden, tournament, onUpdateTournament, onClose }: EditTournamentProps) => {
+const EditTournament = ({
+  hidden,
+  tournament,
+  onUpdateTournament,
+  onClose,
+}: EditTournamentProps) => {
   const [name, setName] = useState(tournament.name);
   const [location, setLocation] = useState(tournament.location);
   const [startDate, setStartDate] = useState(tournament.startDate);

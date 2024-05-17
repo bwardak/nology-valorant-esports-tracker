@@ -1,4 +1,4 @@
-@use '../../styles/Variables.scss' as *;
+@use "../../styles/Variables.scss" as *;
 
 .tournament-profile {
   display: flex;
@@ -39,7 +39,7 @@
   &__venue {
     width: 300px;
     height: 300px;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 30px;
     border: 2px solid $color-grey-dark;
   }

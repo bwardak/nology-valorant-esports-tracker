@@ -12,10 +12,6 @@ const TournamentProfile = () => {
     const response = await fetch(url);
     const tournamentData = await response.json();
     setTournamentProfile(tournamentData);
-    console.log(response);
-    
-    console.log(tournamentData);
-    
   };
 
   useEffect(() => {
@@ -23,7 +19,6 @@ const TournamentProfile = () => {
   }, []);
 
   if (!tournamentProfile) return <div>Loading...</div>;
-  console.log(tournamentProfile.venueUrl);
 
   return (
     <div className="tournament-profile">

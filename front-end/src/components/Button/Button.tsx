@@ -1,15 +1,15 @@
-import './Button.scss';
+import "./Button.scss";
 
 type ButtonProps = {
   text: string;
   onClick: () => void | (() => {});
-}
-const Button = ({text, onClick}: ButtonProps) => {
+};
+const Button = ({ text, onClick }: ButtonProps) => {
   return (
-    <button className='button' onClick={onClick}>
+    <button className="button" onClick={onClick}>
       {text}
     </button>
-  )
-}
+  );
+};
 
 export default Button;

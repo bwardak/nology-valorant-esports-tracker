@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import TeamsList from "../../components/TeamsList/TeamsList";
-import './ViewTeams.scss'
+import "./ViewTeams.scss";
 
 export const ViewTeams = () => {
   const [teams, setTeams] = useState<TeamResponse[]>([]);
@@ -11,18 +11,16 @@ export const ViewTeams = () => {
     const response = await fetch(url);
     const teamData = await response.json();
     setTeams(teamData);
-    console.log(teamData);
-  }
+  };
 
   useEffect(() => {
-    getTeams()
-  }, [])
-
+    getTeams();
+  }, []);
 
   return (
     <>
       <h2 className="teams__title">Teams: </h2>
       <TeamsList teams={teams} />
     </>
-  )
-}
+  );
+};

@@ -1,15 +1,14 @@
-@use '../../styles/Variables.scss' as *;
+@use "../../styles/Variables.scss" as *;
 
-.latest-tournament { // make pulse
+.latest-tournament {
   border: 2px solid $color-pink;
   padding: 20px;
-  // border-radius: 40px;
   width: 300px;
   background-color: $color-grey-dark;
   color: $color-pink;
   margin-bottom: 50px;
   animation: pulse 2s infinite;
-  
+
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -22,4 +21,3 @@
     }
   }
 }
-
