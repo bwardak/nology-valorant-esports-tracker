@@ -9,6 +9,9 @@ const LatestTournamentTile = () => {
 
     const response = await fetch(url);
     const latestTournamentData = await response.json();
+    console.log(url);
+    console.log(response + "hi");
+    
     console.log(latestTournamentData);
     
     setTournament(latestTournamentData);
@@ -16,7 +19,7 @@ const LatestTournamentTile = () => {
 
 
   useEffect(() => {
-    getLatestTournament()
+    getLatestTournament();
   },[])
 
   if(!tournament) {

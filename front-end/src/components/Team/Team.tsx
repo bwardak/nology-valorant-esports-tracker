@@ -18,18 +18,18 @@ const Team = ({team}: TeamProp) => {
   return (
     <div className="team-box">
       <h3 className="team-box__name">{name}</h3>
+      <img src={url} alt={`${team.name} logo`} className="team-box__logo" />
       <div className="team-box__details">
-        <p>Region: {region}</p>
-        <img src={url} alt={`${team.name} logo`} className="team-box__logo" />
+        <p className='team-box__region'>Region: {region}</p>
       </div>
       <div className="team-box__players">
-        <h4>Players:</h4>
-        <ul>
+        <h4 className='team-box__player-text'>Players:</h4>
+        <ul className='players-list'>
           {players.map((player) => (
-            <li key={player.id}>
-              <a href={player.url} target="_blank" rel="noopener noreferrer">
+            <li className='players-list__player' key={player.id}>
+              <p>
                 {player.name}
-              </a>
+              </p>
             </li>
           ))}
         </ul>

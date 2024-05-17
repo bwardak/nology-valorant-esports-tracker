@@ -12,9 +12,7 @@ const TournamentsList = ({ tournaments, onUpdateTournaments }: TournamentsListPr
     <>
       <div className="tournaments">
         {tournaments.map((tournament) => (
-          <Link to={`/tournament/${tournament.id}`} key={tournament.id} className="tournaments__link">
             <Tournament tournament={tournament} key={tournament.id} onUpdateTournament={onUpdateTournaments}/>
-          </Link>
         ))}
       </div>
     </>

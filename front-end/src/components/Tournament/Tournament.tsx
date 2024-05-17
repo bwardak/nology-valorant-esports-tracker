@@ -3,6 +3,7 @@ import EditTournament from "../../containers/EditTournament/EditTournament";
 import Button from "../Button/Button";
 import "./Tournament.scss";
 import DeleteTournaments from "../../containers/DeleteTournaments/DeleteTournaments";
+import { Link } from "react-router-dom";
 
 type TournamentProp = {
   tournament: TournamentResponse;
@@ -28,7 +29,6 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
     }
     return "N/A";
   };
-  console.log(tournament.id);
   
   const parsedStartDate = parseISODate(startDate);
   const parsedEndDate = parseISODate(endDate);
@@ -39,20 +39,26 @@ const Tournament = ({ tournament, onUpdateTournament }: TournamentProp) => {
 
   return (
     <div className="tournament-box">
-      <h3 className="tournament-box__name">{name}</h3>
+      <Link
+        to={`/tournament/${tournament.id}`}
+        key={tournament.id}
+        className="tournaments__link"
+      >
+        <h3 className="tournament-box__name">{name}</h3>
       <div className="tournament-box__details">
         <p>Location: {location}</p>
         <p>Starts: {dateCheck(parsedStartDate)}</p>
         <p>Ends: {dateCheck(parsedEndDate)}</p>
+      </div>
+      </Link>
         <Button onClick={hideUpdateTournamentForm} text="Update Tournament" />
         <EditTournament
           hidden={isHiddenUpdate ? "hidden" : ""}
           tournament={tournament}
           onUpdateTournament={onUpdateTournament}
         />
-        <DeleteTournaments tournament={tournament}/>
+        <DeleteTournaments tournament={tournament} />
       </div>
-    </div>
   );
 };
 

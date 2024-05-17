@@ -3,19 +3,50 @@
 .team-box {
   border-top: 2px solid $color-grey-light;
   margin: 0px 30px;
+  display: grid;
+  grid-template-columns: auto 70px; // Adjust the second column width as needed
+  grid-template-rows: auto;
+  align-items: center; // Align items vertically centered
+  gap: 10px; // Adjust the gap as needed
+
   &__name {
     margin: 10px 5px;
     color: $color-grey-dark;
+     grid-column: 1 / span 1;
   }
 
   &__details {
     margin: 0 5px 20px;
     color: $color-pink;
+    grid-column: 1 / span 2;
+
+    .team-box__region {
+      margin-top: -35px;
+    }
   }
 
   &__logo {
     margin-top: 10px;
     width: 70px;
     height: 70px;
+    grid-column: 2 / span 1; // Ensure the logo takes the second column
+    justify-self: end;
+  }
+
+  &__players {
+    grid-column: 1 / span 2;
+    margin-top: -30px;
+    margin-left: 5px;
+    .team-box__player-text {
+      color: $color-grey-dark;
+    }
+  }
+}
+
+.players-list {
+  margin: 5px 0 10px 30px;
+  &__player {
+    text-decoration: none;
+    color: $color-grey-dark;
   }
 }

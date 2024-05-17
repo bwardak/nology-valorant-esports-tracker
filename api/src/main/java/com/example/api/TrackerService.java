@@ -73,13 +73,17 @@ public class TrackerService {
 
     public Optional<Tournament> getLatestTournament() {
         LocalDate currentDate = LocalDate.now();
-        Optional<Tournament> currentTournament = tournamentsRepository.findCurrentTournament(currentDate);
+        List<Tournament> currentTournament = tournamentsRepository.findCurrentTournament(currentDate);
 
-        if (currentTournament.isPresent()) {
-            return currentTournament;
-        } else  {
-            return tournamentsRepository.findNextTournament(currentDate);
+        if (!currentTournament.isEmpty()) {
+            return Optional.of(currentTournament.get(0));
+        } else {
+            List<Tournament> nextTournaments = tournamentsRepository.findNextTournament(currentDate);
+            if (!nextTournaments.isEmpty()) {
+                return Optional.of(nextTournaments.get(0));
+            }
         }
+        return Optional.empty();
     }
 
     public List<Player> getAllPlayers() {

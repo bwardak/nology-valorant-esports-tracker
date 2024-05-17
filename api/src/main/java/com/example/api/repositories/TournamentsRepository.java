@@ -17,10 +17,10 @@ public interface TournamentsRepository extends JpaRepository<Tournament, Long> {
     List<Tournament> getAllByOrderById();
 
     @Query("SELECT t FROM Tournament t WHERE t.startDate <= :currentDate AND t.endDate >= :currentDate ORDER BY t.startDate DESC")
-    Optional<Tournament> findCurrentTournament(@Param("currentDate") LocalDate currentDate);
+    List<Tournament> findCurrentTournament(@Param("currentDate") LocalDate currentDate);
 
     @Query("SELECT t FROM Tournament t WHERE t.startDate > :currentDate ORDER BY t.startDate ASC")
-    Optional<Tournament> findNextTournament(@Param("currentDate") LocalDate currentDate);
+    List<Tournament> findNextTournament(@Param("currentDate") LocalDate currentDate);
 
     void deleteTournamentById(long id);
 }
