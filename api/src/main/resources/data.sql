@@ -15,10 +15,6 @@ INSERT INTO tournaments (start_date, end_date, name, location, url) VALUES ('202
 INSERT INTO tournaments (start_date, end_date, name, location, url, venue_url) VALUES ('2024-05-23', '2024-06-09', 'Champions Tour 2024: Masters Shanghai', 'Shanghai', 'https://cdn.esportsdriven.com/media/events/logos/603bfd7bf3f54_XJOe8UD.large.webp', 'https://www.mercedes-benzarena.com/pagebanner/11MainStage2_1.jpg');
 
 
-
-
-
-
 -- North American teams
 INSERT INTO teams (name, region, url) VALUES ('100 Thieves', 'North America', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/100_Thieves_logo.svg/1200px-100_Thieves_logo.svg.png');
 INSERT INTO teams (name, region, url) VALUES ('Cloud9', 'North America', 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Cloud9_logo_c._2023.svg');
