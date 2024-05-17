@@ -1,1 +1,33 @@
 @use '../../styles/Variables.scss' as *;
+
+.tournament-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  &__location {
+    color: $color-pink;
+  }
+
+  &__start-date,
+  &__end-date {
+    color: $color-grey;
+  }
+
+  &__name {
+    color: $color-grey-dark;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__start-date {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+}

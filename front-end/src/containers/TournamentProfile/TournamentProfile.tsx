@@ -2,8 +2,6 @@ import "./TournamentProfile.scss";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-
-
 const TournamentProfile = () => {
   const { id } = useParams<{ id: string }>();
   const [tournamentProfile, setTournamentProfile] =
@@ -22,13 +20,18 @@ const TournamentProfile = () => {
 
   if (!tournamentProfile) return <div>Loading...</div>;
   console.log(tournamentProfile.name);
-  
+
   return (
-    <div>
-      <h2>{tournamentProfile.name}</h2>
-      <p>{tournamentProfile.location}</p>
-      <p>{tournamentProfile.startDate}</p>
-      <p>{tournamentProfile.endDate}</p>
+    <div className="tournament-profile">
+      <img
+        src={tournamentProfile.url}
+        alt=""
+        className="tournament-profile__logo"
+      />
+      <h2 className="tournament-profile__name">{tournamentProfile.name}</h2>
+      <p className="tournament-profile__location">{tournamentProfile.location}</p>
+      <p className='tournament-profile__start-date'>Start: {tournamentProfile.startDate}</p>
+      <p className='tournament-profile__end-date'>End: {tournamentProfile.endDate}</p>
     </div>
   );
 };
