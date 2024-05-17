@@ -17,7 +17,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class TrackerService {
@@ -95,9 +94,7 @@ public class TrackerService {
     }
 
     public Tournament getTournamentById(long id) {
-        Tournament tournament = tournamentsRepository.findById(id).orElseThrow(() -> new NotFoundException("Tournament Not Found"));
-        System.out.println("Fetched Tournament: " + tournament.getVenueUrl());
-        return tournament;
+        return tournamentsRepository.findById(id).orElseThrow(() -> new NotFoundException("Tournament Not Found"));
     }
 
     public Team getTeamById(long id) {

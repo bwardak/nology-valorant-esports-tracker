@@ -3,7 +3,6 @@ package com.example.api.models;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 @Table(name = "tournaments")
